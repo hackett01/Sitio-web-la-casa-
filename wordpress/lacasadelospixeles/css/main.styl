@@ -1,0 +1,1591 @@
+//Colors
+emerald = #00a1bc
+blue = #1c2229
+blue_gray = #5b6570
+//Fonts
+opens = 'Open Sans', sans-serif
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.lcp-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.lcp-fb:before,
+.lcp-fb:before {
+  content: "\f09a";
+}
+.lcp-li:before {
+  content: "\f0e1";
+}
+.lcp-tw:before {
+  content: "\f099";
+}
+.lcp-mail:before
+	content '\f0e0'
+.lcp-phone:before
+	content '\f095'
+.lcp-mark:before
+	content '\f041'
+.lcp-down-angle:before
+	content '\f107'
+.lcp-up-angle:before
+	content "\f106"
+.lcp-left-angle:before
+	content "\f104"
+.lcp-right-angle:before
+	content "\f105"
+	
+/*===============================================
+	$SLIDER
+================================================*/
+.s-2
+	.content
+		.content-box
+			@media only screen and (min-width:1500px)
+				max-width 536px
+
+.s-3
+	.content
+		.content-box
+			@media only screen and (min-width:1500px)
+				max-width 524px
+
+/*================================================
+	$GENERAL
+================================================*/
+.blue-bg
+	background #192e49
+	color #fff
+
+.background
+	@media only screen and (min-width:1500px)
+		background-size auto !important
+
+
+
+/*==========================
+	$HOME
+===========================*/
+
+.ych-menu-in
+	overflow hidden
+#offcanvasmenu
+	background blue
+	border none
+	>ul
+		padding 0
+		margin-top 20px
+		>li
+			list-style none
+			position relative
+			a
+				color #fff
+				display block
+				padding 20px 30px
+				text-transform uppercase
+				text-decoration none
+				font-size 20px
+				font-family opens
+				font-size 20px
+			button
+				position absolute 
+				right 0
+				color #fff
+				top 0
+				z-index 1000
+				height 50px
+				width 50px
+				text-align center
+				background #000 !important
+				border none
+				outline 0 !important
+				margin 8px 10px 0
+				border-radius 50%
+				box-shadow none !important
+			&.open
+				ul
+					max-height 244px
+		li
+			a
+				background transparent !important
+		ul
+			float none
+			position relative
+			background transparent 
+			box-shadow none 
+			border none 
+			padding 0
+			margin 0
+			background #000
+			border-radius 0
+			max-height 0
+			li
+				a
+					color #eaeaea !important
+					font-size 14px
+					padding 14px 30px
+					border-bottom 1px solid #262626
+				&:last-child
+					a
+						border-bottom none
+					
+header
+	transition all .4s ease
+	&.in
+		transform translatex(-300px);
+.ych-menu-content
+	transition all .4s ease
+	&.in
+		transform translatex(-300px);
+.ych-menu
+	display block
+	padding 0
+	width 300px
+	height 100%
+	position fixed
+	top 0
+	right 0
+	z-index 1000
+	transform translateX(300px)
+	transition all .4s ease 
+	&.in
+		transform translateX(0px)
+@media screen and (min-width: 992px)
+	.ych-menu
+		display none
+@media screen and (max-width: 340px)
+	.ych-menu-content
+		&.in
+			transform translatex(-250px)
+	.ych-menu
+		width 250px
+		transform translateX(250px)
+	#offcanvasmenu	
+		width 250px
+	header
+		&.in
+			transform translatex(-250px)
+@media screen and (max-width: 768px)
+	.ms-nav-next,.ms-nav-prev
+		display none !important
+html
+	text-rendering optimizeLegibility !important
+	-webkit-font-smoothing antialiased !important
+	body.portfolio
+		background #f4f4f4
+		overflow-x hidden
+	body
+		font 16px 'Open Sans'
+		color #444444
+		font-weight 400
+		h1
+			font-size 32px
+			font-family opens
+			font-weight 100
+			margin 0
+			@media only screen and (min-width:768px)
+				font-size 58px				
+		h2
+			font-weight 100
+			font-size 32px
+			@media only screen and (min-width:768px)
+				font-size 50px	
+		p 
+			font-size 16px
+			line-height 23px
+			font-family opens
+			font-weight 400
+		a
+			color emerald
+		.no-padd
+			padding 0
+		.emerald-btn
+			display inline-block
+			padding 15px 35px
+			margin 20px
+			background emerald
+			color #fff
+			font-size 16px
+			font-family opens
+			font-weight 700
+			line-height 20px
+			text-transform uppercase
+			text-decoration none
+			border-radius 5px
+			transition all .3s ease-out
+			&:hover
+				background #00c0e0
+			@media only screen and (max-width:480px)
+				font-size 16px
+				padding 20px 35px
+				margin 0
+		header
+			position absolute
+			top 0
+			left 0
+			width 100%
+			padding-top 2%
+			z-index 1000
+			*
+				transition all .4s ease
+			figure
+				width 100%
+				margin 0
+				img
+					width 200px
+					@media only screen and (min-width:768px)
+					 width 263px
+			.navigation
+				padding 0 15px
+				button
+					margin-top 20px
+					width 50px
+					height 40px
+					background blue
+					border solid 2px blue
+					border-radius 5px
+					padding 0 10px
+					outline 0
+					@media only screen and (max-width:480px) and (orientation: landscape)
+						margin-top 10px
+					span
+						display block
+						height 3px
+						background #fff
+						margin-top 5px
+						&:first-child
+							margin-top 0
+			nav
+				ul 
+					padding 0
+					margin  20px 0 0
+					li 
+						display inline-block
+						list-style none
+						position relative
+						a
+							display block
+							text-transform uppercase
+							text-decoration none !important
+							font-family opens
+							color #fff !important
+							font-size 16px
+							padding 15px
+							font-weight 700
+							text-decoration none
+							@media only screen and (max-width:1024px)
+								padding 15px
+						ul.sub-menu
+							position absolute
+							margin 0 -30px
+							background #1C2229
+							opacity 0
+							padding 0
+							transition opacity .4s ease-out !important
+							visibility visible
+							&:before
+								content ''
+								background transparent
+								height 0
+								width 0
+								border-bottom solid 5px blue
+								border-left solid 5px transparent
+								border-right solid 5px transparent
+								position absolute
+								top -5px
+								right 50%
+								left 50%
+							&.out
+								height 0
+								overflow hidden
+								visibility hidden
+								padding 0
+							&.in 
+								visibility visible
+								opacity 1
+								height auto
+							li
+								display block
+								a 
+									padding 10px 15px
+									color #fff !important
+									text-align left
+									border-bottom solid 1px #282f37
+									font-size 12px
+									width 180px
+									&:hover
+										color #fff !important
+										background #00A1BC 
+								&:last-child
+									a
+										border-bottom 0
+									
+								
+		.master-slider
+			@media only screen and (max-width:480px) and (orientation: landscape)
+				height 400px !important
+			@media only screen and (max-height:580px) and (min-width:768px)
+				height 580px !important
+			.slide-3
+				.content
+					.container
+						.row
+							.content-box
+								.table-cell
+									h1
+										font-size 45px
+										@media only screen and (max-width:480px)
+											font-size 28px
+											line-height 35px
+						
+			.content
+				position absolute
+				width 100%
+				height 100%
+				top 0
+				left 0
+				z-index 1
+				color #fff
+				.container
+					height 100%
+					.row
+						height 100%
+						.content-box
+							height 100%
+							display table
+							.table-cell
+								display table-cell
+								vertical-align middle
+								h1
+									font-size 62px
+									margin-bottom 40px
+									@media only screen and (max-height:580px) and (min-width:1024px)
+										margin-top 60px
+									@media only screen and (max-width:480px)
+										font-size 32px
+										line-height 39px
+										margin-bottom 20px
+										margin-top 30px
+									@media only screen and (max-width:480px) and (orientation: landscape)
+										margin-top 0
+										line-height 32px
+										margin-bottom 10px
+								p 
+									font-size 20px
+									line-height 27px
+									margin-bottom 30px
+									@media only screen and (max-width:480px)
+										font-size 16px
+										line-height 23px
+										margin-bottom 20px
+									@media only screen and (max-width:480px) and (orientation: landscape)
+										margin-bottom 10px
+		#nosotros
+			min-height 790px
+			background url(../img/nosotros-bg.jpg) no-repeat bottom right
+			background-size auto 130%
+			color #444
+			@media only screen and (max-width:480px) and (orientation: landscape)
+				min-height 690px
+			@media only screen and (max-width:480px)
+				background-size auto 100%
+				.emerald-btn
+					padding 20px 0px
+					line-height 23px
+					width 100%
+					text-align center
+			*
+				transition all .4s ease
+			.row
+				.content
+					background #fff
+					min-height 790px
+					padding 5% 6%
+					@media only screen and (max-width:992px)
+						min-height inherit
+					@media only screen and (max-width:480px)
+						padding 10% 6%
+					h1
+						margin-bottom 15%
+						@media only screen and (max-width:768px)
+							margin-bottom 5%
+						@media only screen and (max-width:480px)
+							margin-bottom 40px
+					p 
+						margin-bottom 15%
+						@media only screen and (max-width:768px)
+							margin-bottom 5%
+						@media only screen and (max-width:480px)
+							margin-bottom 30px
+		#servicios
+			min-height 715px
+			background url(../img/services-bg.jpg) no-repeat center center
+			background-size cover
+			color #fff
+			padding 100px 0 80px
+			text-align center
+			@media only screen and (max-width:480px)	
+				.emerald-btn
+					padding 20px 0px
+					line-height 23px
+					width 100%
+					text-align center
+			*
+				transition all .4s ease
+			h1
+				margin-bottom 65px
+			p 
+				margin-bottom 65px
+			img
+				height 70px
+			span
+				display block
+				margin-bottom 60px
+				font-size 16px
+				font-family opens
+				margin-top 25px
+		#portafolio
+			background #1a2027
+			&.only-two
+				@media only screen and (min-width:1123px)
+					a
+						max-height 300px
+						>img
+							transform translateY(-25%)
+						
+			*
+				transition all .4s ease
+			a
+				text-decoration none
+				position relative
+				display block
+				overflow hidden
+				&:hover
+					.overlay
+						opacity 1
+						.o-content
+							transform translateY(0)
+				&:last-child
+					.overlay
+						.o-content
+							img
+								width 40%
+				.overlay
+					content ''
+					width 100%
+					height 100%
+					top 0
+					left 0
+					background-color rgba(0,0,0,.6)
+					opacity 0
+					display block
+					position absolute
+					transition all .3s ease-out
+					.o-content
+						transition all .3s ease-out
+						vertical-align middle
+						text-align center
+						height 100%
+						transform translateY(100px)
+						.outer
+							display table
+							height 100%
+							width 100%
+							.inner
+								height 100%
+								width 100%
+								display table-cell
+								vertical-align middle
+								text-align center
+						img 
+							width 50%
+							margin-bottom 20px
+						span
+							display block
+							color #fff
+							font-family opens
+							font-size 20px
+							font-weight 100
+							&:after
+								content ''
+								background #FF9100
+								display block
+								height 1px
+								width 40px
+								margin 10px auto 0
+								
+								
+				img
+					width 100%
+		#contactanos
+			min-height 740px
+			background url(../img/contactanos-bg.jpg) repeat-y center center
+			background-size cover
+			padding-top 100px
+			background-size auto 101%
+			@media only screen and (max-width:480px)	
+				.emerald-btn
+					padding 20px 0px
+					line-height 23px
+					width 100%
+					text-align center
+			@media only screen and (max-width:480px) and (orientation: landscape)
+				min-height 540px
+			*
+				transition all .4s ease
+			h2
+				margin-bottom 50px
+			p 
+				margin-bottom 50px
+			color #444
+			text-align center
+		footer
+			background blue
+			padding 50px 0 50px
+			color #fff
+			text-align center
+			a
+				text-decoration none !important
+				color #fff
+			@media only screen and (min-width:768px)
+				text-align left
+			*
+				transition all .4s ease
+			img
+				width 100%
+				max-width 285px
+				margin-bottom 20px
+				@media only screen and (max-width:480px)
+					height 70px
+					width auto
+			.copy
+				font-family opens
+				font-size 16px
+				display block
+				margin-bottom 40px
+				@media only screen and (min-width:480px)
+					margin-bottom 20px
+				@media only screen and (min-width:768px)
+					margin-bottom 0
+			.contact
+				span
+					color #fff !important
+					display block
+					font-family opens
+					font-size 16px
+					line-height 22px
+					margin-bottom 10px
+				ul
+					margin 15px 0 0
+					padding 0
+					@media only screen and (max-width:480px)
+						margin-top 40px
+					@media only screen and (max-width:480px) and (orientation: landscape)
+						display inline-block
+						margin 40px auto 0
+					li
+						list-style none
+						padding 0
+						margin 0
+						display inline-block
+						margin-left 25px
+						&:first-child
+							margin-left 0
+						a
+							display block
+							background #5b6570
+							height 40px
+							width 40px
+							border-radius 50%
+							text-align center
+							padding-top 10px
+							transition all .3s ease-out
+							&:hover
+								i
+									color #fff
+							i 
+								font-size 20px
+								color #1c2229
+						&:nth-child(1)
+							a
+								&:hover
+									background  #007cfc
+						&:nth-child(2)
+							a
+								&:hover
+									background #0086be
+						&:nth-child(3)
+							a
+								&:hover
+									background #00defe
+
+/*===========================================
+	$NOSOTROS
+============================================*/
+
+.nosotros-content
+	padding 100px 0
+	max-width 403px
+	margin 0 auto
+	text-align center
+	@media only screen and (min-width:992px)
+		text-align left
+	@media only screen and (min-width:1200px)
+		padding 39px 40px
+	h2
+		margin-bottom 20px
+
+.datos
+	background #1a2027
+	color #fff
+	padding 100px 0
+	background url('../img/bg-datos.jpg') left top no-repeat fixed
+	@media only screen and (max-width:480px)
+		background url('../img/bg-datos.jpg') center center
+		background-size cover
+		
+	h2
+		text-align center
+
+.secundary-page-banner
+	padding 150px 0 100px
+	text-align center
+	@media only screen and (min-width:768px)
+		padding 200px 0
+	@media only screen and (min-width:1140px)
+		padding 240px 0		
+	&.nosotros
+		background url('../img/bg-nosotros.jpg') left top no-repeat fixed
+	h1
+		color #fff
+		width 382px
+		max-width 900px
+		margin 0 auto
+		@media only screen and (min-width:768px)
+			width 720px
+	p
+		color #fff
+
+/*First Section */
+.first-section
+	.nosotros-content
+		@media only screen and (min-width:1200px)
+			height 526px
+			padding-top 122px
+
+.nosotros-pic-1
+	@media only screen and (max-width:480px)
+		min-height 200px
+	min-height 466px
+	background url('../img/nosotros-pic-1.jpg') right top no-repeat
+	background-size cover
+	@media only screen and (min-width:1200px)
+		height 676px
+
+/*Second Section */
+.second-section
+	.nosotros-content
+		padding 51px 30px
+		@media only screen and (min-width:1200px)
+			padding 100px 30px
+.nosotros-pic-2
+	display none
+	background url('../img/nosotros-pic-2.jpg') left top no-repeat
+	background-size cover
+	@media only screen and (min-width:992px)
+		min-height 662px
+		display block
+	@media only screen and (min-width:1200px)
+		min-height 754px
+
+.nosotros-pic-3
+	min-height 500px
+	background transparent
+	background url('../img/nosotros-pic-3.jpg') right top no-repeat
+	background-size cover
+	@media only screen and (min-width:992px)
+		min-height 662px
+	@media only screen and (min-width:1200px)
+		min-height 754px
+
+.portafolio-titulo
+	h2
+		margin 50px 0
+		color #fff
+		text-align center
+
+.datos
+	h2
+		margin 0 0 70px
+
+.number
+	text-align center	
+	p
+		font-size 18px
+		margin-bottom 20px
+	.circle
+		width 134px
+		height 134px
+		border-radius 100%	
+		display inline-block
+		position relative
+		span
+			display block
+			line-height 130px
+			font-size 50px
+			color #fff
+			text-align center
+			font-weight 700
+		>div
+			position absolute
+			top 0
+			left 0
+
+/*================================================
+	$SERVICOS
+================================================*/
+.banner.servicios
+	h1
+		@media only screen and (min-width:1500px) 
+			width 945px
+	
+/*===========================================
+	$PORTFOLIO
+============================================*/
+
+.portfolio
+	.red-color
+		color #cc3333
+		font-weight 700	
+	.grey-color
+		color #cccccc
+		font-weight 700
+	.black-color
+		color #19191c
+		font-weight 700
+	.colors
+		text-align center
+		padding 100px 0
+		@media only screen and (min-width:768px) 
+			padding 50px 0
+		h2
+			margin-bottom 50px
+			@media only screen and (min-width:768px) 
+				margin-bottom 0
+		.color-1, .color-2, .color-3
+			margin 30px 0
+			@media only screen and (min-width:768px) 
+				float left
+				width 33%
+				padding 0 10px
+				margin 30px 0 65px
+			@media only screen and (min-width:992px) 
+				float none
+				width auto
+		
+		.color-chart
+			float left
+			width 30%
+			margin 0
+		.color-info
+			text-align left
+			float left
+			width 60%
+			margin-left 10%
+		.colors-img
+			img
+				max-width none
+				width auto
+	img
+		max-width 100%
+	h2
+		text-align center
+	.pantone-info
+		p
+			color #19191c
+			font-weight 700
+		span
+			display block
+	.biyeon
+		background url('../img/biyeon-hero.jpg') center top no-repeat
+		
+	.typography
+		background url('../img/biyeon-type-bg.jpg') center top no-repeat
+		text-align center
+		padding 100px 0
+		h2
+			margin-bottom 50px
+	.mobile-view
+		padding 36px 0 100px
+		height 500px
+		h2
+			margin-bottom 50px
+		figure
+			position relative
+			img
+				max-width none
+				width 1000px
+				position absolute
+				left 50%
+				margin-left -500px
+				top -95px
+	.desktop-view
+		background #19191c
+		padding 100px 0
+		color #fff
+		text-align center
+		@media only screen and (min-width:768px) 
+			padding 200px 0 100px
+			text-align left
+		h2
+			margin-bottom 50px
+		img
+			width 282px
+			max-width none
+			@media only screen and (min-width:768px) 
+				position absolute
+				left 0
+				width 400px
+				
+		p
+			width 300px
+			margin 0 auto
+
+	.technical-info
+		padding 100px 0
+		text-align center
+		h2
+			margin 70px 0 25px
+		.tech-logos
+			display inline-block
+			figure
+				margin 0 10px
+				float left
+		.job-features
+			margin 30px 0
+			p
+				font-weight 700
+
+/*===========================================
+	$CAREERS
+============================================*/
+.banner.careers
+	height 60 vh
+	h1
+		margin-top 80px
+.careers-heading
+	text-align center
+	padding 50px 0	
+	h2
+		padding-bottom 20px
+.job-benefits
+	figure
+		height 50px
+.second-row
+	margin-top 40px 
+.image-middle
+	margin 80px 0
+	img
+		width 100%
+		height auto
+.available-positions
+	text-align center	
+.job-title
+	h3
+		margin-bottom 0
+	span
+		color #a5a5a5
+		font-size 16px	
+.read-more-btn, .read-more-btn:hover, .read-more-btn:focus, .read-more-btn:active
+	color orange
+.icon-expand
+	transform rotate(180deg)
+.job-description
+	margin-top 40px
+	border-bottom 1px solid #dbdbdb
+	padding 0 0 40px 0
+.job-available
+	margin 50px 0 20px
+.apply-form-content
+	position fixed
+	width 100%
+	background rgba(0,0,0,0.8)
+	left 0
+	top 0
+	z-index 99999
+	height 100%
+	opacity 0
+	transform translateY(-100%)
+	transition opacity .3s ease-in-out, transform .1s ease-in-out .4s !important
+.apply-form-content.active-form
+	display block
+	transform translateY(0)
+	opacity 1
+	transition opacity .3s ease-in-out, transform .1s ease-in-out !important
+.apply-form
+	background #fff
+	min-width 40%
+	max-width 720px
+	float right
+	height 100%
+	overflow-y scroll
+	padding 0
+	position relative
+	right -720px
+.apply-form.showed-form
+	right 0
+	transition right .6s ease-in-out
+.form-heading
+	background #e7ecee
+	padding 10px 20px 10px 70px
+	position relative
+	h4
+		font-size 30px
+		color #444
+	p
+		font-size 16px
+	.close-form
+		position absolute
+		left 30px
+		top 35px
+		cursor pointer
+.form-body
+	padding 20px 30px 20px 30px
+	input[type="text"], input[type="email"], textarea
+		background #e7ecee
+		border none
+		border-radius 5px
+		padding 10px
+		width 100%
+		margin-bottom 15px
+	.emerald-btn
+		margin-left 0
+label[for="upload-cv"]
+	display block
+	background #717171
+	cursor pointer
+	padding 20px 30px
+	border-radius 5px
+	color #fff
+	font-weight 700
+	font-size 18px
+#upload-cv
+	width 0
+	height 0
+	visibility hidden
+.upload-value
+	color #dbdbdb
+	font-weight 700
+	font-size 20px
+	padding 10px 0
+	
+/*===========================================
+	YORCH
+============================================*/
+turquesa = #00a1bc;
+orange = #ff9c00;
+*:not(.slide)
+	transition .3s ease-out
+.btn
+	outline 0 !important
+	border none !important
+	box-shadow none !important
+	font-family 'Open Sans'
+	font-weight bold
+	font-size 16px
+	text-transform uppercase
+	padding 25px 50px
+	width 100%
+	text-decoration none
+	transition all 0.3s ease
+	@media only screen and (min-width:480px)
+		width auto
+	&.turquesa
+		background turquesa
+		color #fff
+		&:hover
+			background #00c0e0
+h3
+	font-size 24px 
+	font-family 'Open Sans'
+	font-weight 400
+	@media only screen and (min-width:768px)
+		font-size 30px 
+label
+	font-size 18px
+	font-family 'Open Sans'
+	font-weight 300
+	text-transform uppercase
+	display block
+	margin-bottom 15px
+	color #444444
+.form-control
+	background #e7ecee
+	border none !important
+	box-shadow none !important
+	outline 0 !important
+	border-radius 4px
+	padding 15px 
+	font-size 18px
+	font-family 'Open Sans'
+	font-weight 300
+	height auto
+	margin-bottom 20px
+	resize none
+	color #222
+	&.error
+		border solid 1px red !important
+#success-msg
+	background #99CC33
+	color #fff
+	font-family lato
+	font-weight bold
+	font-size 16px
+	padding 0
+	text-align center
+	margin-top 20px
+	height 52px
+	overflow hidden
+	max-height 0
+	margin-bottom 30px
+	&.wrong
+		background orange
+	&.shows
+		max-height 52px
+		padding 15px 0
+	&.error
+		background red
+.banner
+	position relative
+	width 100vw
+	display table-cell
+	text-align center
+	vertical-align middle
+	height 480px
+	background-attachment fixed
+	@media only screen and (min-width:992px)
+		height 664px
+	@media only screen and (min-width:1500px)
+		background-size auto !important
+	h1 
+		color #fff
+		width 100%
+		padding 0 15px
+		margin auto
+		@media only screen and (min-width:480px)
+			width 382px
+			padding 0
+		@media only screen and (min-width:768px)
+			width 750px
+		@media only screen and (min-width:1500px)
+			font-size 62px
+			line-height 79px
+		@media only screen and (max-width:480px)
+			margin-bottom 10px !important
+	p
+		font-size 20px
+		line-height 27px
+		font-weight 300
+		@media only screen and (max-width:480px)
+			padding-bottom 50px
+	.col-md-10
+		@media only screen and (max-width:480px)
+			margin-top 90px
+#contacto
+	
+	.col-lg-7
+		background #fff
+		padding 30px 15px
+		text-align center
+		@media only screen and (min-width:480px)
+			text-align left
+		@media only screen and (min-width:768px)
+			padding 100px 60px 0
+	.col-lg-5
+		padding  0
+	.nom 
+		margin 0
+	#map
+		height 350px
+		@media only screen and (min-width:1200px)
+			height 1240px
+	ul
+		padding 0
+		&:not(.social)
+			padding-left 30px
+			li
+				list-style none
+				margin-bottom 15px
+				a 
+					text-decoration none
+					font-size 16px
+					color #444
+					position relative
+					i
+						color orange
+						position absolute
+						left -30px
+						top 3px
+						font-size 18px
+		&.social
+			li
+				display inline-block
+				list-style none
+				a
+					display block
+					border-radius 50%
+					width 35px
+					height 35px
+					text-align center
+					padding-top 8px
+					i
+						color #fff
+						font-size 20px
+				&:first-child
+					a
+						background #0066ff
+				&:last-child
+					margin-left 15px
+					a
+						background #00d8ff
+	.lcp-phone
+		transform rotate(-90deg)
+		font-size 22px !important
+	.lcp-mark
+		font-size 24px !important
+	textarea
+		height 170px
+		margin-bottom 25px
+	h1
+		margin-bottom 21px
+	h3
+		margin-top 35px
+		margin-bottom 30px
+	p
+		margin-bottom 40px
+.square-section
+	&.section-2,&.section-4
+		background-position left center
+	&.section-1
+		background-position right center
+	&.section-3
+		background-position right center
+	&.section-5
+		background-position right center
+	@media only screen and (max-width:992px)
+		&.section-2,&.section-4,&.section-3,&.section-1
+			background-size cover !important
+			background-position center bottom
+			padding-top 320px
+	@media only screen and (max-width:768px)
+		&.section-2,&.section-4,&.section-3,&.section-1
+			background-size 100% auto !important
+			background-position center top
+			padding-top 140px
+	.col-md-6
+		background rgba(255,255,255,1)
+		padding 30px 15px
+		text-align center
+		transition all .3s ease-out !important
+		@media only screen and (min-width:480px)
+			text-align left
+			padding 50px
+		@media only screen and (min-width:992px)
+			padding 100px
+			background #fff
+		@media only screen and (min-width:1500px)
+			padding 200px
+	h1
+		margin-bottom 40px
+	p
+		margin-bottom 30px
+	img
+		margin-bottom 30px
+		width 40px
+		@media only screen and (min-width:480px)
+			width auto
+.slider-wrapper
+	#prev,#next
+		position absolute
+		top 45%
+		background transparent
+		border none
+		z-index 300
+		font-size 60px
+		color #fff
+		opacity .6
+	#prev
+		left 10px
+		@media only screen and (min-width:480px)
+			left 50px
+	#next
+		right 10px
+		@media only screen and (min-width:480px)
+			right 50px
+#main-screen
+	height 100vh
+	overflow hidden
+	@media only screen and (max-width:568px) and (orientation: landscape)
+		height 400px !important
+	@media only screen and (max-height:580px) and (min-width:768px)
+		height 580px !important
+	.slide
+		width 100% !important
+		height 100% !important
+		display none
+		@media only screen and (max-width:480px)
+			.content
+				.container
+					.row
+						.content-box
+							.table-cell
+								padding 0 30px
+		img
+			width 100%
+		&.s-1
+			background url(../img/slide-1.jpg) no-repeat center center
+			background-size cover
+		&.s-2
+			background url(../img/slide-2.jpg) no-repeat center center
+			background-size cover
+		&.s-3
+			background url(../img/slide-3.jpg) no-repeat center center
+			background-size cover
+			.content
+				.container
+					.row
+						.content-box
+							.table-cell
+								h1
+									font-size 45px
+									@media only screen and (max-width:568px)
+										font-size 28px
+										line-height 35px
+									@media only screen and (min-width:1500px)
+										font-size 54px
+		.emerald-btn
+			margin-left 0
+		.content
+			position absolute
+			width 100%
+			height 100%
+			top 0
+			left 0
+			z-index 1
+			color #fff
+			padding-top 40px
+			.container
+				height 100%
+				.row
+					height 100%
+					.content-box
+						height 100%
+						display table
+						.table-cell
+							display table-cell
+							vertical-align middle
+							h1
+								font-size 62px
+								margin-bottom 40px
+								@media only screen and (max-height:580px) and (min-width:1024px)
+									margin-top 60px
+								@media only screen and (max-width:568px)
+									font-size 32px
+									line-height 39px
+									margin-bottom 20px
+									margin-top 30px
+								@media only screen and (max-width:568px) and (orientation: landscape)
+									margin-top 0
+									line-height 32px
+									margin-bottom 10px
+							p 
+								font-size 20px
+								line-height 27px
+								margin-bottom 30px
+								@media only screen and (max-width:568px)
+									font-size 16px
+									line-height 23px
+									margin-bottom 20px
+								@media only screen and (max-width:568px) and (orientation: landscape)
+									margin-bottom 10px
+.bg-cover
+	background-size cover
+.bg-white
+	background-color #fff !important
+	h2
+		color #444444 !important
+.icon
+	display inline-block
+	background-repeat no-repeat
+	background-position center center
+	background-size auto auto
+	&.php
+		background-image url('../img/icon-php.png')
+		width 177px
+		height 94px
+	&.phone
+		background-image url('../img/icon-phone.png')
+		width 36px
+		height 69px
+	&.responsive
+		background-image url('../img/icon-responsive.png')
+		width 121px
+		height 44px
+	&.guys
+		background-image url('../img/identity-icon.png')
+		width 87px
+		height 70px
+	&.social-media
+		background-image url('../img/social-m-icon-big.png')
+		width 75px
+		height 68px
+	&.refresh-web
+		background-image url('../img/icon-refresh-web.png')
+		width 45px
+		height 44px
+	&.native-code
+		background-image url('../img/native-code.png')
+		width 45px
+		height 44px		
+	&.cogs
+		background-image url('../img/icon-cogs.png')
+		width 45px
+		height 44px
+	&.rocket
+		background-image url('../img/icon-rocket.png')
+		width 43px
+		height 43px
+	&.note
+		background-image url('../img/icon-note.png')
+		width 43px
+		height 43px
+	&.aplication-web
+		background-image url('../img/icon-aplicacionweb.png')
+		width 70px
+		height 69px
+	&.design-object
+		background-image url('../img/icon-design-object.png')
+		width 45px
+		height 44px
+	&.android
+		background-image url('../img/icon-android.png')
+		width 95px
+		height 114px
+	&.desktop
+		background-image url('../img/icon-desktop.png')
+		width 70px
+		height 69px
+	&.apple
+		background-image url('../img/icon-apple.png')
+		width 95px
+		height 114px
+	&.jquery
+		background-image url('../img/icon-jquery.png')
+		width 192px
+		height 114px
+	&.wordpress
+		background-image url('../img/icon-wordpress.png')
+		width 104px
+		height 114px
+	&.css3
+		background-image url('../img/icon-css3.png')
+		width 88px
+		height 114px
+	&.html
+		background-image url('../img/icon-html.png')
+		width 88px
+		height 114px
+	&.stylus
+		background-image url('../img/icon-stylus.png')
+		width 110px
+		height 114px
+	&.android-ios
+		background-image url('../img/iphone-android-icons.png')
+		width 94px
+		height 46px
+	&.social-connect
+		background-image url('../img/social-media-icons.png')
+		width 105px
+		height 44px
+.banner 
+	h1
+		margin-bottom 30px
+	p
+		color #fff
+.servicio 
+	.servicio-content 
+		transition all .3s ease-out !important
+		*
+			transition none
+		.inner
+			padding 75px 50px
+			@media only screen and (min-width:1500px)
+				height 550px
+				vertical-align middle
+				display table-cell
+				padding 75px 120px
+				
+		h2
+			margin-top 10px
+			font-size 28px
+	.servicio-pic
+		background-size cover
+		@media (max-width 767px)
+			min-height 600px
+		@media (max-width 480px)
+			min-height 200px
+	.estadisticas
+		padding 50px 0 150px 0
+		background-image url('../img/bg-estadistica.jpg')
+		color #fff
+		h3
+			font-size 58px
+			font-weight 100
+			margin-bottom 80px
+		p
+			color #fff
+			margin-bottom 25px
+		span
+			&.count
+				color #ff9203
+				margin-bottom 20px
+				font-size 62px
+		small
+			font-size 18px
+			color #ff9203
+			margin-bottom 25px
+			display block
+#servicios-diseno-web 
+	.pic-1
+		background-image url("../img/servicio-diseno-web-pic-1.jpg")
+	.pic-2
+		background-image url("../img/servicio-diseno-web-pic-2.jpg")
+	.pic-3
+		background-image url("../img/servicio-diseno-web-pic-3.jpg")
+#servicios-diseno-aplicacion 
+	.pic-1
+ 	    background-image url("../img/servicio-diseno-aplicacion-pic-1.jpg")
+	.pic-2
+ 	    background-image url("../img/servicio-diseno-aplicacion-pic-2.jpg")
+	.pic-3
+		background-image url("../img/servicio-diseno-aplicacion-pic-3.jpg")
+
+.tecnologias-empleadas
+	padding 60px 0 80px 0
+	border-bottom 1px solid #f1f1f1
+	h2
+		margin-bottom 50px
+	.icon,img
+		margin-right 70px
+		@media (min-width 767px) and (max-width 991px)
+			margin-right 20px
+			width 15%
+			background-size 100% auto
+		@media (max-width 767px)
+			margin-right 20px
+			width 15%
+			display block
+			margin 0 auto 40px !important
+			background-size 100% auto 
+		@media (max-width 480px)
+			width auto
+			height 80px
+			&.small
+				height 40px
+		&:last-child
+			margin-right 0
+.ych-menu-content .nuestro-trabajo
+	padding 170px 0 100px 
+.things-we-did
+	text-align center
+	>div
+		display inline-block
+		padding 0 15px
+		width 150px
+		img 
+			width 40px 
+		h5
+			font-size 18px
+			margin-top 15px
+.what-we-do
+	text-align center
+	@media screen and (min-width:768px)
+		display table
+		margin 0 auto
+	>div
+		display inline-block
+		padding 0 15px
+		width 100%
+		@media screen and (min-width:768px)
+			width 150px
+			display table-cell
+		img 
+			height 70px
+.go-up
+	outline 0 !important
+	position fixed
+	bottom 50px
+	right 50px
+	background turquesa !important
+	color #fff
+	border none
+	border-radius 5px
+	padding 10px 20px 12px
+	font-size 40px
+	line-height 22px
+	opacity 0
+	transform translateY(200px)
+	z-index 10000
+	@media screen and (max-width:480px)
+		right 15px
+	&.visible
+		transform translateY(0)
+		opacity .6
+.recaptcha
+	&.error
+		border solid 1px red
+	.checkbox
+		overflow hidden
+		input[type="checkbox"]
+			margin-left -100px
+			opacity 0
+			& + label
+				display block
+				width 30px
+				height 30px
+				border solid 2px #ccc
+				border-radius 3px
+				float left
+				transition border-radius .6s ease-out, border .3s ease-out
+				position relative
+				&:after
+					content '\f00c'
+					font normal normal normal 14px/1 'FontAwesome'
+					position absolute
+					top 4px 
+					left 3px
+					font-size 20px
+					color emerald
+					opacity 0
+					transform scale(.5)
+					transition opacity .3s ease-out, transform .6s ease-out
+			&:checked + label
+				border-radius 50%
+				border solid 2px turquesa
+				&:after
+					opacity 1
+					transform scale(1)
+		span
+			float left
+			padding 4px 0
+			margin-left 10px

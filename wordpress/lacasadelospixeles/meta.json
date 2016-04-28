@@ -1,0 +1,47 @@
+{
+    "home": {
+        "meta-data": {
+            "Author": {
+                "meta-tag": "La Casa de los Pixeles",
+                "rel-author": "https://plus.google.com/101624997653421445685/about"
+            },
+            "Title": "La Casa de los Pixeles Diseño web en Puebla y soluciones digitales",
+        "Description": "Creamos soluciones digitales, desde sitios web hasta aplicaciones móviles y campañas de marketing digital. Cónocenos y convéncete.",
+        "og:title": "La Casa de los Pixeles - Soluciones digitales, sitios web, apps y marketing digital",
+        "og:type": "Website",
+        "og:image": "http://lacasadelospixeles.com/img/sm-logo.jpg",
+        "og:url": "http://lacasadelospixeles.com",
+        "og:description": "Creamos soluciones digitales, desde sitios web hasta aplicaciones móviles y campañas de marketing digital. Cónocenos y comprueba por que somos tu mejor ocpión para servicios digitales."
+        }
+    },
+    "nosotros": {
+        "meta-data": {
+            "Author": {
+                "meta-tag": "La Casa de los Pixeles",
+                "rel-author": "https://plus.google.com/101624997653421445685/about"
+            },
+            "Title": "LCP - Especialistas en diseño web y soluciones digitales",
+        "Description": "Somos más que una agencia de diseño en Puebla, creamos experiencias digitales de primer nivel para todo tipo de empresa.",
+        "og:title": "La Casa de los Pixeles - Soluciones digitales, sitios web, apps y marketing digital",
+        "og:type": "Website",
+        "og:image": "http://lacasadelospixeles.com/img/sm-logo.jpg",
+        "og:url": "http://lacasadelospixeles.com",
+        "og:description": "Somos más que una agencia de diseño web en Puebla, somos un equipo de diseñadores, programadores y managers que desde hace más de 2 años, creamos increíbles experiencias digitales para todo tipo de empresas y personas."
+        }
+    },
+    "servicios": {
+        "meta-data": {
+            "Author": {
+                "meta-tag": "La Casa de los Pixeles",
+                "rel-author": "https://plus.google.com/101624997653421445685/about"
+            },
+            "Title": "LCP - Servicios digitales, Sitios web, Apps, Social Media",
+        "Description": "Somos más que una agencia de diseño en Puebla, creamos experiencias digitales de primer nivel para todo tipo de empresa.",
+        "og:title": "La Casa de los Pixeles - Soluciones digitales, sitios web, apps y marketing digital",
+        "og:type": "Website",
+        "og:image": "http://lacasadelospixeles.com/img/sm-logo.png",
+        "og:url": "http://lacasadelospixeles.com",
+        "og:description": "Somos más que una agencia de diseño web en Puebla, somos un equipo de diseñadores, programadores y managers que desde hace más de 2 años, creamos increíbles experiencias digitales para todo tipo de empresas y personas."
+        }
+    }
+}

@@ -1,0 +1,717 @@
+html,body {
+	overflow-x: hidden;}
+body {
+	font-family: 'Open Sans', sans-serif;}
+h1,h2,h3,h4,h5 {	
+	font-weight: 200;
+	font-family: 'Open Sans', sans-serif;}
+h2 {
+	font-size: 60px;}
+h3 {
+	font-size: 40px;}
+h5{
+	font-size: 24px;}
+.cover-bg {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;}
+.middle-content {
+	top: 50%;
+	position: relative;
+	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Safari */
+	transform: translate(0,-50%);}
+.vertical-middle-content {
+left: 50%;
+	-ms-transform: translate(-50%,0); /* IE 9 */
+	-webkit-transform: translate(-50%,0); /* Safari */
+	transform: translate(-50%,0);}
+/***********************
+* 		MACBOOK        * 
+***********************/
+.position-macbook {
+	width: 100%;
+	height: 725px;}
+.macbook-container {
+	display: block;
+	background-image: url('../img/portafolio/mac-book.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	height: 725px;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 1200px;
+	top: 0; 
+	position: relative;
+}
+.macbook-container .screen{
+	position: absolute; 
+	display: block;
+	overflow: hidden;
+		top: 53px; 	
+		left: 12.4%; 
+	width: 75.3%;
+	height: 77.8%; 
+	background-color: #fff;}
+/***********************
+*	     IMAC		   * 
+***********************/
+.position-imac {
+	width: 100%;
+	height: 920px;}
+.imac-container {
+	display: block;
+	background-image: url('../img/portafolio/imac.png'); 
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	height: 720px;
+	width: 100%;
+	max-width: 750px;
+	position: relative;
+}
+.imac-container .screen{
+	position: absolute;
+	display: block;
+	overflow: hidden;
+		top: 30px;
+		left: 0%; 
+	width: 96.5%;
+	height: 59.3%; 
+	background-color: #fff;}
+.imac-container .screen img{
+	width: 101%;}
+
+/***********************
+*	     IPHONE		   * 
+***********************/
+.position-iphone {
+	position: relative;
+	width: 100%;
+	height: 920px;}
+.iphone-container {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
+	height: 600px;
+	width: 100%;
+	max-width: 730px;
+	position: absolute;
+}
+/***********************
+*	HEADER PORTAFOLIO  * 
+***********************/
+
+.header-portafolio {
+	position: relative;
+	height: 675px;}
+.header-portafolio h1.title-header{
+	color: #fff;
+	margin-top: 20px;
+	font-size: 48px;
+	font-weight: 400;}
+.header-portafolio p {
+	font-size: 20px;
+	line-height: 27px;
+	color: #fff;}	
+.header-portafolio .cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(70,72,76,.75);}
+#portafolio-schaebens .header-portafolio{
+	}
+#portafolio-biyeon .header-portafolio{
+	background-image: url('../img/portafolio/biyeon/header-biyeon.jpg')}
+/***********************
+*		COLORES		   * 
+***********************/
+.colores {
+	position: relative;
+	background-color: #f4f4f4;
+	padding: 60px 0;}
+.colores .title {
+	margin: 0 0 50px 0}
+.colores h5 {
+	font-weight: 600; 
+	font-size: 20px;}
+.colores p {
+	font-size: 16px;
+	color: #19191c;
+	font-weight: 400;}
+.colores p span {
+	color: #888;}
+.colores .legend{
+	display: none;}
+@keyframes bake-pie {
+  from {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+.pieID {
+  display: inline-block;
+  vertical-align: top;
+}
+.pie {
+  height: 170px;
+  width: 170px;
+  
+  margin: 0 0 25px 0;
+  position: relative;
+}
+.pie::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 85px;
+  height: 85px;
+  background: #EEE;
+  border-radius: 50%;
+  top: 42.5px;
+  left: 42.5px;
+}
+.slice {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  clip: rect(0px, 170px, 170px, 80px);
+  animation: bake-pie 1s;
+}
+.slice span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 170px;
+  height: 170px;
+  clip: rect(0px, 170px, 170px, 80px);
+  border-radius: 50%;
+}
+/*PALETA DE COLORES*/
+#portafolio-schaebens .pie.first .slice.s0-0 span,#portafolio-schaebens .pie.first .slice.s0-1 span{
+	background-color: #f7c106!important}
+#portafolio-schaebens .pie.first .slice.s1-0 span,#portafolio-schaebens .pie.first .slice.s1-1 span{
+	background-color: #f9cd38 !important}
+#portafolio-schaebens .pie.first .slice.s2-0 span,#portafolio-schaebens .pie.first .slice.s1-2 span{
+	background-color: #fada6a !important}
+#portafolio-schaebens .pie.second .slice.s0-0 span,#portafolio-schaebens .pie.second .slice.s0-1 span{
+	background-color: #ccb189!important}
+#portafolio-schaebens .pie.second .slice.s1-0 span,#portafolio-schaebens .pie.second .slice.s1-1 span{
+	background-color: #d6c1a1 !important}
+#portafolio-schaebens .pie.second .slice.s2-0 span,#portafolio-schaebens .pie.second .slice.s1-2 span{
+	background-color: #e0d0b8 !important}
+#portafolio-schaebens .pie.third .slice.s0-0 span,#portafolio-schaebens .pie.third .slice.s0-1 span{
+	background-color: #826140!important}
+#portafolio-schaebens .pie.third .slice.s1-0 span,#portafolio-schaebens .pie.third .slice.s1-1 span{
+	background-color: #9b8166 !important}
+#portafolio-schaebens .pie.third .slice.s2-0 span,#portafolio-schaebens .pie.third .slice.s1-2 span{
+	background-color: #b4a08c !important}
+#portafolio-schaebens .pie.fourth .slice.s0-0 span,#portafolio-schaebens .pie.fourth .slice.s0-1 span{
+	background-color: #e64461!important}
+#portafolio-schaebens .pie.fourth .slice.s1-0 span,#portafolio-schaebens .pie.fourth .slice.s1-1 span{
+	background-color: #eb6981 !important}
+#portafolio-schaebens .pie.fourth .slice.s2-0 span,#portafolio-schaebens .pie.fourth .slice.s1-2 span{
+	background-color: #f08fa0 !important}
+#portafolio-schaebens .pie.first .slice.s0-0 span,#portafolio-schaebens .pie.first .slice.s0-1 span{
+	background-color: #f7c106!important}
+/*Biyeon*/
+#portafolio-biyeon .pie.first .slice.s0-0 span,#portafolio-biyeon .pie.first .slice.s0-1 span{
+	background-color: #cc3333!important}
+#portafolio-biyeon .pie.first .slice.s1-0 span,#portafolio-biyeon .pie.first .slice.s1-1 span{
+	background-color: #d65c5c !important}
+#portafolio-biyeon .pie.first .slice.s2-0 span,#portafolio-biyeon .pie.first .slice.s1-2 span{
+	background-color: #e08585 !important}
+#portafolio-biyeon .pie.second .slice.s0-0 span,#portafolio-biyeon .pie.second .slice.s0-1 span{
+	background-color: #222223!important}
+#portafolio-biyeon .pie.second .slice.s1-0 span,#portafolio-biyeon .pie.second .slice.s1-1 span{
+	background-color: #4e4e4f !important}
+#portafolio-biyeon .pie.second .slice.s2-0 span,#portafolio-biyeon .pie.second .slice.s1-2 span{
+	background-color: #7a7a7b !important}
+#portafolio-biyeon .pie.third .slice.s0-0 span,#portafolio-biyeon .pie.third .slice.s0-1 span{
+	background-color: #cccccc!important}
+#portafolio-biyeon .pie.third .slice.s1-0 span,#portafolio-biyeon .pie.third .slice.s1-1 span{
+	background-color: #d6d6d6 !important}
+#portafolio-biyeon .pie.third .slice.s2-0 span,#portafolio-biyeon .pie.third .slice.s1-2 span{
+	background-color: #e0e0e0 !important}
+#portafolio-newfashion .pie.first .slice.s0-0 span,#portafolio-newfashion .pie.first .slice.s0-1 span{
+	background-color: #222223!important}
+#portafolio-newfashion .pie.first .slice.s1-0 span,#portafolio-newfashion .pie.first .slice.s1-1 span{
+	background-color: #4e4e4f !important}
+#portafolio-newfashion .pie.first .slice.s2-0 span,#portafolio-newfashion .pie.first .slice.s1-2 span{
+	background-color: #7a7a7b !important}
+#portafolio-newfashion .pie.second .slice.s0-0 span,#portafolio-newfashion .pie.second .slice.s0-1 span{
+	background-color: #ca3261!important}
+#portafolio-newfashion .pie.second .slice.s1-0 span,#portafolio-newfashion .pie.second .slice.s1-1 span{
+	background-color: #d55b81 !important}
+#portafolio-newfashion .pie.second .slice.s2-0 span,#portafolio-newfashion .pie.second .slice.s1-2 span{
+	background-color: #df84a0 !important}
+#portafolio-newfashion .pie.third .slice.s0-0 span,#portafolio-newfashion .pie.third .slice.s0-1 span{
+	background-color: #dbb970!important}
+#portafolio-newfashion .pie.third .slice.s1-0 span,#portafolio-newfashion .pie.third .slice.s1-1 span{
+	background-color: #e2c78d !important}
+#portafolio-newfashion .pie.third .slice.s2-0 span,#portafolio-newfashion .pie.third .slice.s1-2 span{
+	background-color: #e9d5a9 !important}
+#portafolio-schaebens .position-macbook,#portafolio-biyeon .position-macbook {
+	position: absolute;
+		left: 50%;}
+#portafolio-newfashion .position-macbook {
+	top: -20%;
+	position: absolute;}
+#portafolio-newfashion .colores {
+	padding-top: 580px}
+#portafolio-newfashion .macbook-container .screen {
+	top: 7.5%;
+	width: 75.2%;
+	height: 77.55%;}
+#portafolio-newfashion .macbook-container .screen img {
+	width: 100%;
+	height: auto;}
+/***********************
+*		TIPOGRAFIA	   * 
+***********************/
+#portafolio-biyeon .tipografia {
+	background-image: url('../img/portafolio/biyeon/bg-tipografia-biyeon.jpg')}
+.tipografia .title{
+	margin-bottom: 80px;}
+.tipografia span {
+	font-size: 20px;
+	margin-bottom: 20px;
+	display: block;}
+.tipografia .item-tipografia h4{
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 1;
+	margin-bottom: 20px;
+	text-transform: none;
+	}
+.tipografia .uppsercase{
+	text-transform: uppercase;} 
+.tipografia .lowercase {
+	text-transform: lowercase;}
+.tipografia .item-tipografia.lato { 
+	font-family: 'Lato', sans-serif;}
+.tipografia .item-tipografia.roboto{ 
+	font-family: 'Roboto Condensed', sans-serif;}
+.tipografia .item-tipografia.raleway,.tipografia .item-tipografia.raleway h4{
+	font-weight: 400;
+	font-family: 'Raleway', sans-serif;}
+.tipografia .item-tipografia.raleway.bold,.tipografia .item-tipografia.raleway.bold h4{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;}
+.tipografia .item-tipografia.ptsans{ 
+	font-family: 'PT Sans', sans-serif;}
+.tipografia .item-tipografia.rock h4{
+	font-weight: 300;
+	text-transform: none;}
+.tipografia .item-tipografia.rock{
+	font-family: 'Rock Salt', cursive;}
+/************************
+*		MOVIL			*
+************************/
+.vista-movil {
+	z-index: 10;
+	height: 1200px;
+	position: relative;
+	padding: 75px 0;}
+.position-iphone .iphone-container.one{
+	top: 65%;
+	right: 87%;}
+.position-iphone .iphone-container.two{
+    top: 43%;
+    right: 53%;}
+.position-iphone .iphone-container.three{
+	top: 23%;
+	right: 19%;}
+.position-iphone .iphone-container.fourth{
+	right: -16%;
+    top: 3%;}
+.position-iphone .iphone-container.five{
+	right: -51%;
+	top: -14%;}
+.position-iphone.left .iphone-container.one{
+	top: 65%;
+	left: 87%;}
+.position-iphone.left .iphone-container.two{
+    top: 43%;
+    left: 53%;}
+.position-iphone.left .iphone-container.three{
+	top: 23%;
+	left: 19%;}
+.position-iphone.left .iphone-container.fourth{
+	left: -16%;
+    top: 3%;}
+.position-iphone.left .iphone-container.five{
+	left: -51%;
+	top: -14%;}
+/************************
+*		ESCRITORIO		*
+************************/
+#portafolio-schaebens .position-imac,#portafolio-biyeon .position-imac,#portafolio-newfashion .position-imac  {
+	position: absolute;
+	top: 16%; 
+	left: -15%} 
+.vista-desktop {
+	z-index: 9;
+	position: relative;
+	padding: 75px 0;
+	background-color: #19191c}
+.vista-desktop .title {
+	margin-bottom: 200px;
+	text-align: right;}
+.vista-desktop p,.vista-desktop h2,.vista-desktop h3{
+	color: #fff;}
+.vista-desktop h3 {
+	text-align: left;
+	margin-bottom: 25px;}
+.vista-desktop .tecnologias {
+	margin: 75px 0 44px 0;
+	text-align: left;}
+@media screen and (max-width: 768px){
+	.vista-desktop .tecnologias {
+		text-align:  left;
+	}
+}
+.vista-desktop .tecnologias img{
+	display: inline-block;
+	margin-right: 55px;}
+.vista-desktop .tecnologias img:last-child{
+	margin-right: 0;}
+@media screen and (min-width: 1500px){
+	.position-imac{
+		left: -10px !important;
+	}
+}
+/************************
+*		NUESTRO TRABAJO	*
+************************/
+.nuestro-trabajo {
+	padding: 200px 0 100px 0}
+.nuestro-trabajo h5{
+	margin-top: 50px;
+	text-align: center;
+	font-weight: 800;
+	color: #444444;
+	font-family: 'Roboto Condensed', sans-serif;}
+@media (min-width: 992px) and (max-width: 1199px){ 
+.macbook-container {
+	top: 0;
+	min-height: 725px;
+	min-width: 1180px;
+	background-size: 100% auto;
+	background-position: top left;}
+#portafolio-newfashion .macbook-container{
+	min-width: initial;
+	height: 525px}
+#portafolio-newfashion .position-macbook {
+	max-width: 1000px;
+	height: 525px;
+    left: 50%;
+    -ms-transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);}
+#portafolio-newfashion .macbook-container .screen{
+    top: 5.3%;
+	height: 64.6%;}
+#portafolio-newfashion .colores {
+	padding-top: 460px}
+.macbook-container .screen {
+	height: 76.1%}
+/************************
+*		ESCRITORIO		*
+************************/	
+#portafolio-schaebens .position-imac,#portafolio-biyeon .position-imac,#portafolio-newfashion .position-imac{
+	top: 100px ; 
+	left: -28%;
+	margin: 20px 0}
+.vista-desktop .title {
+	margin-bottom: 100px;}
+	}
+@media (min-width: 768px) and (max-width: 991px){ 
+.pie {
+  height: 125px;
+  width: 125px;
+}
+.pie::before {
+  width: 62.5px;
+  height: 62.5px;
+  top: 31.7px;
+  left: 31.7px; 
+}
+.slice {
+  width: 125px;
+  height: 125px;
+  clip: rect(0px, 125px, 125px, 60px);
+}
+.slice span {
+  width: 125px;
+  height: 125px;
+  clip: rect(0px, 125px, 125px, 60px);
+}
+.position-macbook{
+	height: 570px;}
+.macbook-container {
+	top: 0;
+	min-width: initial;
+	background-size: auto 100%;
+	background-position: top left;	
+	height: 570px;
+	min-width: 750px;
+	max-width: 750px}
+#portafolio-newfashion .macbook-container{
+	
+	background-size: 100% auto !important;
+	height: 440px}
+#portafolio-newfashion .position-macbook {
+	max-width: 760px;
+	height: 440px;
+    left: 50%;
+    -ms-transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);}
+#portafolio-newfashion .macbook-container .screen{
+	top: 5.5%;
+	left: 12.3%;
+	width: 75.5%;
+    height: 83%;}
+.macbook-container .screen {
+    top: 7.8%;
+	left: 16%;
+	height: 79.7%}
+/************************
+*		COLORES			*
+************************/
+#portafolio-newfashion .colores {
+	padding-top: 370px}
+.colores .title {
+	text-align: center;} 
+/************************
+*		TIPOGRAFIA		*
+************************/	
+.tipografia {
+	height: auto;
+	text-align: center;}
+.tipografia .title {
+	text-align: center;}
+/************************
+*		MOVIL			*
+************************/
+.vista-movil {
+	z-index: 10;
+	height: 850px;
+	position: relative;
+	padding: 75px 0;}
+.vista-movil h2{
+	margin: 0}
+.vista-movil .position-iphone img {
+	width: 70%;
+	height: 70%;}
+.position-iphone.left .iphone-container.one{
+	top: 40%;
+	right: 57%;} 
+.position-iphone.left .iphone-container.two{
+	top: 25%;
+    right: 22%;} 
+.position-iphone.left .iphone-container.three{
+	top: 11%;
+	right: -13%;}
+.position-iphone.left .iphone-container.fourth{
+	right: -48%;
+    top: -2%;}
+.position-iphone.left .iphone-container.five{
+	right: -82%;
+	top: -14%;}
+.position-iphone .iphone-container.one{
+	top: 40%;
+	right: 57%;} 
+.position-iphone .iphone-container.two{
+	top: 25%;
+    right: 22%;} 
+.position-iphone .iphone-container.three{
+	top: 11%;
+	right: -13%;}
+.position-iphone .iphone-container.fourth{
+	right: -48%;
+    top: -2%;}
+.position-iphone .iphone-container.five{
+	right: -82%;
+	top: -14%;}
+/************************
+*		ESCRITORIO		*
+************************/
+.vista-desktop {
+	padding: 100px 0;}
+.vista-desktop .title {
+	margin-bottom: 30px;}
+
+#portafolio-schaebens .position-imac,#portafolio-biyeon .position-imac,#portafolio-newfashion .position-imac{
+	top: 100px ; 
+	left: -50%;
+	margin: 20px 0}
+.imac-container .screen {
+	top: 32px;
+	width: 96.2%;
+	position: relative;}
+.vista-desktop .tecnologias {
+	margin-top: 60px}
+.vista-desktop .tecnologias img{
+	margin-right: 30px;
+	width: 70px}
+/************************
+*		NUESTRO TRABAJO	*
+************************/	
+.nuestro-trabajo  {
+	padding: 100px 0;}
+.nuestro-trabajo h5{
+	margin: 40px 0 60px 0;
+	font-size: 20px} 
+
+}
+
+@media (max-width: 767px) { 
+h1,h2,h3,h4,h5,p,span {
+	text-align: center;}
+.pie {
+	margin: 25px 0;}
+.position-macbook {
+	height: 560px;}
+
+#portafolio-schaebens .position-macbook,#portafolio-biyeon .position-macbook {
+	position: relative;
+	left: 0;
+	height: auto;} 
+#portafolio-newfashion .position-macbook {
+	top: 0%;
+	height: 420px;
+	position: relative;}
+#portafolio-newfashion .colores {
+	padding-top: 40px}
+#portafolio-newfashion .macbook-container .screen {
+	top:25px}   
+.macbook-container {
+	min-width: initial;
+	padding-bottom: 80px;
+	top: 0;
+	height: auto}
+.macbook-container .screen {
+    left: 12.4%;
+    width: 75.2%; 
+	top: 27px;
+	position: relative;}
+.macbook-container .screen img{
+	width: 100%;
+	height: auto}
+	
+.colores .title {
+	margin: 0 0 60px 0}
+/************************
+*		MOVIL			*
+************************/
+.vista-movil .position-iphone img {
+	max-width: 65%;
+	height: auto;}
+.vista-movil {
+	height:925px;
+	z-index: 100;
+	padding: 80px 0}
+.vista-movil h2 {
+	margin: 0 0 30px 0;}
+.position-iphone .iphone-container.one{
+	top: 40%;
+	right: 57%;} 
+.position-iphone .iphone-container.two{
+	top: 25%;
+    right: 22%;} 
+.position-iphone .iphone-container.three{
+	top: 11%;
+	right: -13%;}
+.position-iphone .iphone-container.fourth{
+	right: -51%;
+    top: -3%;}
+.position-iphone .iphone-container.five{
+	right: -82%;
+	top: -14%;}
+.position-iphone.left .iphone-container.one{
+	top: 40%;
+	right: 57%;} 
+.position-iphone.left .iphone-container.two{
+	top: 25%;
+    right: 22%;} 
+.position-iphone.left .iphone-container.three{
+	top: 11%;
+	right: -13%;}
+.position-iphone.left .iphone-container.fourth{
+	right: -51%;
+    top: -3%;}
+.position-iphone.left .iphone-container.five{
+	right: -82%;
+	top: -14%;}
+/************************
+*		TIPOGRAFIA		*	
+************************/
+.tipografia {
+	height: auto;
+	padding: 40px 0}
+.tipografia .title {
+	margin-bottom: 40px}
+/************************
+*		ESCRITORIO		*
+************************/
+.vista-desktop .title {
+	margin-bottom: 30px;}
+.position-imac {
+	height: auto;
+}
+.imac-container {
+	height: auto;
+	padding-bottom: 220px;}
+#portafolio-schaebens .position-imac,#portafolio-biyeon .position-imac,#portafolio-newfashion .position-imac{
+	position: relative ;
+	top:0 ; 
+	left: -5%;
+	margin: 20px 0}
+.imac-container .screen {
+	top: 25px;
+	height: 43%;
+	position: relative;}
+
+
+/************************
+*		NUESTRO TRABAJO	*
+************************/	
+.nuestro-trabajo {
+	padding: 60px 0;}
+.nuestro-trabajo h5{
+	margin: 30px 0 40px 0} 
+}
+@media (max-width: 555px) { 
+#portafolio-newfashion .position-macbook {
+	height: 320px}
+.vista-movil .position-iphone img {
+	max-width: 50%;
+	height: auto;}
+.vista-movil {
+	height: 600px}
+.macbook-container .screen {
+	top: 20px}
+.imac-container .screen{
+top: 15px}
+.vista-desktop .tecnologias {
+	margin: 40px 0}
+.vista-desktop .tecnologias img {
+	margin-right: 35px;
+	width: 60px;
+	height: auto;
+	}
+}
+@media (max-width: 555px) { 
+#portafolio-newfashion .macbook-container .screen{
+	top: 18px}
+.imac-container .screen{
+top: 10px}
+}
